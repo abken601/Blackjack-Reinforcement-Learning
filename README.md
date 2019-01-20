@@ -21,7 +21,7 @@ After train for  1000000  iterations using Temporal Difference\
 Out game bot fights against the dealer for  100000  rounds\
 Win:  43.646 %\
 Draw:  8.298 %\
-Lose:  48.056 %\
+Lose:  48.056 %
 
                                             Q-learning
               player (usable ace)                            player (no usable ace)    
