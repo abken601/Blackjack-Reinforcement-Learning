@@ -22,48 +22,47 @@ Lose:  47.923 %
 
 Ok, three methods give more or less the same performance, with temporal difference method gives slightly better result. Next we report their strategy maps (H = hit, S = stick). 
 
-
                                             Q-learning
               player (usable ace)                            player (no usable ace)    
           11 12 13 14 15 16 17 18 19 20 21               11 12 13 14 15 16 17 18 19 20 21 
-       1   H  S  S  H  S  S  S  S  S  S  S            1   H  H  S  H  H  H  S  S  S  S  S 
-       2   H  H  H  H  H  H  H  S  S  S  S            2   H  S  H  S  S  S  S  S  S  S  S  
-    D  3   H  H  H  H  H  H  H  S  S  S  S         D  3   H  H  S  S  S  S  S  S  S  S  S  
-    e  4   H  H  H  H  H  H  H  S  S  S  S         e  4   H  S  S  S  S  S  S  S  S  S  S  
-    a  5   H  H  H  H  H  H  H  H  S  S  S         a  5   H  S  S  S  S  S  S  S  S  S  S  
-    l  6   H  H  H  H  H  H  H  H  S  S  S         l  6   H  H  S  S  S  S  S  S  S  S  S  
-    e  7   H  H  H  H  H  H  H  S  S  S  S         e  7   H  H  H  H  H  H  S  S  S  S  S  
-    r  8   H  H  H  H  H  H  H  S  S  S  S         r  8   H  H  H  H  H  H  H  S  S  S  S  
-       9   H  H  H  H  H  H  S  H  S  S  S            9   H  H  H  S  H  H  S  S  S  S  S  
-      10   H  H  H  H  H  S  S  S  S  S  S           10   H  H  H  H  H  H  S  S  S  S  S  
+       1   H  S  S  H  S  S  S  S  S  S  S            1   H  H  S  H  H  H  S  S  S  S  S  
+       2   H  H  H  H  H  H  H  S  S  S  S            2   H  H  S  H  S  S  S  S  S  S  S  
+    D  3   H  H  H  H  H  H  H  H  S  S  S        D   3   H  H  H  S  S  S  S  S  S  S  S  
+    e  4   H  H  H  H  H  H  H  S  S  S  S        e   4   H  H  S  S  S  S  S  S  S  S  S  
+    a  5   H  H  H  H  H  H  H  H  S  S  S        a   5   H  H  S  S  S  S  S  S  S  S  S  
+    l  6   H  H  H  H  H  H  H  H  S  S  S        l   6   H  H  S  S  S  S  S  S  S  S  S  
+    e  7   H  H  H  H  H  H  H  S  S  S  S        e   7   H  H  H  H  H  H  S  S  S  S  S  
+    r  8   H  H  H  H  H  H  H  S  S  S  S        r   8   H  H  H  H  H  H  H  S  S  S  S  
+       9   H  H  H  H  H  H  H  S  S  S  S            9   H  H  H  H  H  H  S  S  S  S  S  
+      10   H  H  H  H  H  H  S  S  S  S  S           10   H  H  H  H  S  H  S  S  S  S  S  
 
                                               Sarsa
               player (usable ace)                            player (no usable ace)    
           11 12 13 14 15 16 17 18 19 20 21               11 12 13 14 15 16 17 18 19 20 21 
-       1   H  S  S  S  S  S  S  S  S  S  S            1   H  S  S  S  S  H  S  S  S  S  S  
-       2   H  H  H  H  H  H  H  S  S  S  S            2   H  S  S  S  S  S  S  S  S  S  S  
-    D  3   H  H  H  H  H  H  H  S  S  S  S         D  3   H  S  S  S  S  S  S  S  S  S  S  
-    e  4   H  H  H  H  S  H  H  S  S  S  S         e  4   H  H  S  S  S  S  S  S  S  S  S  
-    a  5   H  H  H  H  H  H  H  H  S  S  S         a  5   H  S  S  S  S  S  S  S  S  S  S  
-    l  6   H  H  H  H  H  H  H  H  S  S  S         l  6   H  S  S  S  S  S  S  S  S  S  S  
-    e  7   H  H  H  H  H  H  S  S  S  S  S         e  7   H  H  H  H  H  H  S  S  S  S  S  
-    r  8   H  H  H  H  H  H  H  S  S  S  S         r  8   H  H  H  S  S  H  H  S  S  S  S  
-       9   H  H  H  H  H  S  H  S  S  S  S            9   H  S  H  H  S  H  S  S  S  S  S  
-      10   H  H  H  H  S  H  S  S  S  S  S           10   H  H  H  S  S  S  S  S  S  S  S  
+       1   H  S  S  S  S  S  S  S  S  S  S            1   H  S  S  S  H  H  S  S  S  S  S  
+       2   H  H  H  H  H  H  S  S  S  S  S            2   H  S  S  S  S  S  S  S  S  S  S  
+    D  3   H  H  H  H  H  H  S  H  S  S  S        D   3   H  S  S  S  S  S  S  S  S  S  S  
+    e  4   H  H  H  H  H  H  H  S  S  S  S        e   4   H  S  S  S  S  S  S  S  S  S  S  
+    a  5   H  H  H  H  H  H  H  H  S  S  S        a   5   H  S  S  S  S  S  S  S  S  S  S  
+    l  6   H  H  H  H  H  H  H  H  S  S  S        l   6   H  S  S  S  S  S  S  S  S  S  S  
+    e  7   H  H  H  H  H  H  S  S  S  S  S        e   7   H  H  S  H  H  H  S  S  S  S  S  
+    r  8   H  H  H  H  H  H  H  S  S  S  S        r   8   H  H  H  H  H  H  H  S  S  S  S  
+       9   H  H  H  H  H  H  H  S  S  S  S            9   H  S  H  H  S  S  S  S  S  S  S  
+      10   H  H  H  S  S  S  S  S  S  S  S           10   H  S  S  S  H  H  S  S  S  S  S  
 
                                         Temporal Difference
               player (usable ace)                            player (no usable ace)    
           11 12 13 14 15 16 17 18 19 20 21               11 12 13 14 15 16 17 18 19 20 21 
-       1   H  H  H  H  H  H  H  S  S  S  S            1   H  H  H  H  H  H  S  S  S  S  S  
+       1   H  H  H  H  H  H  H  H  S  S  S            1   H  H  H  H  H  H  S  S  S  S  S  
        2   H  H  H  H  H  H  H  S  S  S  S            2   H  S  S  S  S  S  S  S  S  S  S  
-    D  3   H  H  H  H  H  H  H  S  S  S  S         D  3   H  S  S  S  S  S  S  S  S  S  S  
-    e  4   H  H  H  H  H  H  H  S  S  S  S         e  4   H  S  S  S  S  S  S  S  S  S  S  
-    a  5   H  H  H  H  H  H  H  H  S  S  S         a  5   H  S  S  S  S  S  S  S  S  S  S  
-    l  6   H  H  H  H  H  H  H  S  S  S  S         l  6   H  S  S  S  S  S  S  S  S  S  S  
-    e  7   H  H  H  H  H  H  H  S  S  S  S         e  7   H  H  H  H  H  H  S  S  S  S  S  
-    r  8   H  H  H  H  H  H  H  S  S  S  S         r  8   H  H  H  H  H  S  S  S  S  S  S  
-       9   H  H  H  H  H  H  H  H  S  S  S            9   H  H  H  H  H  S  S  S  S  S  S  
-      10   H  H  H  H  H  H  H  S  S  S  S           10   H  H  H  S  S  S  S  S  S  S  S  
+    D  3   H  H  H  H  H  H  H  S  S  S  S        D   3   H  S  S  S  S  S  S  S  S  S  S  
+    e  4   H  H  H  H  H  H  H  S  S  S  S        e   4   H  S  S  S  S  S  S  S  S  S  S  
+    a  5   H  H  H  H  H  H  H  S  S  S  S        a   5   H  S  S  S  S  S  S  S  S  S  S  
+    l  6   H  H  H  H  H  H  H  S  S  S  S        l   6   H  S  S  S  S  S  S  S  S  S  S  
+    e  7   H  H  H  H  H  H  S  S  S  S  S        e   7   H  H  H  H  H  S  S  S  S  S  S  
+    r  8   H  H  H  H  H  H  H  S  S  S  S        r   8   H  H  S  H  H  H  S  S  S  S  S  
+       9   H  H  H  H  H  H  H  H  S  S  S            9   H  H  H  H  H  H  S  S  S  S  S  
+      10   H  H  H  H  H  H  H  S  S  S  S           10   H  H  H  H  H  H  S  S  S  S  S  
       
 Three strategy maps are similar to each other, it represents some robustness of these methods. Interestingly, only tempoeral difference method gives consistent result from Sutton, while the rest deviate a little bit, more work is needed to see why it is so. 
 
