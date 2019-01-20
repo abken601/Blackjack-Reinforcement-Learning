@@ -65,6 +65,8 @@ Ok, three methods give more or less the same performance, with temporal differen
        9   H  H  H  H  H  H  H  H  S  S  S            9   H  H  H  H  H  S  S  S  S  S  S  
       10   H  H  H  H  H  H  H  S  S  S  S           10   H  H  H  S  S  S  S  S  S  S  S  
       
-Three strategy maps are similar to each other, it represents some robustness of these methods. Interestingly, only tempoeral difference method gives consistent result from 
+Three strategy maps are similar to each other, it represents some robustness of these methods. Interestingly, only tempoeral difference method gives consistent result from Sutton, while the rest deviate a little bit, more work is needed to see why it is so. 
 
-                  ![Optimal Policy from Sutton](optimalpolicy.png)
+![Optimal Policy from Sutton](optimalpolicy.png)
+
+My code allows some variation in the gameplay, for example, you can artificially design your own deck, you can set the winning score out of 21, you can change the rule followed by the dealer, etc. Everything is well explained in main.py in the repository.
