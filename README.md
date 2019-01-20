@@ -5,11 +5,11 @@ We try reinforcement learning method to game Blackjack.
 
 
 
-After train for  1000000  iterations using Q-Learning
-Out game bot fights against the dealer for  100000  rounds
-Win:  42.744 %
-Draw:  8.690000000000001 %
-Lose:  48.565999999999995 %
+After train for  1000000  iterations using Q-Learning\
+Out game bot fights against the dealer for  100000  rounds\
+Win:  42.744 %\
+Draw:  8.690000000000001 %\
+Lose:  48.565999999999995 %\
 
 After train for  1000000  iterations using Sarsa
 Out game bot fights against the dealer for  100000  rounds
