@@ -67,4 +67,4 @@ Ok, three methods give more or less the same performance, with temporal differen
       
 Three strategy maps are similar to each other, it represents some robustness of these methods. Interestingly, only tempoeral difference method gives consistent result from 
 
-![Optimal Policy from Sutton](optimalpolicy.png)
+                  ![Optimal Policy from Sutton](optimalpolicy.png)
